@@ -41,9 +41,9 @@ public class APItest {
         String currentJson = readFileAsString(PATH_TO_CURRENT_JSON);
 
         if (baseJson.equals(currentJson)) {
-            System.out.println("Base JSON and obtained JSON match");
+            System.out.println("\n\n Base JSON and obtained JSON match");
         } else {
-            System.out.println("Base JSON and obtained JSON NOT match");
+            System.out.println("\n\n Base JSON and obtained JSON NOT match");
         }
 
     }
