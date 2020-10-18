@@ -1,3 +1,6 @@
 # Default ignored files
 /.idea/workspace.xml
 /src/test/resources/output/
+/Practical_Test2.iml
+/.idea/
+/target/

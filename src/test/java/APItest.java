@@ -1,24 +1,10 @@
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
-import com.google.gson.reflect.TypeToken;
-
-import java.lang.reflect.Type;
-import java.util.Map;
-
-import com.google.common.collect.MapDifference;
-import com.google.common.collect.Maps;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
