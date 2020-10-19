@@ -1,5 +1,6 @@
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import java.io.FileWriter;
@@ -40,11 +41,7 @@ public class APItest {
         String baseJson = readFileAsString(PATH_TO_BASE_JSON);
         String currentJson = readFileAsString(PATH_TO_CURRENT_JSON);
 
-        if (baseJson.equals(currentJson)) {
-            System.out.println("\n\n Base JSON and obtained JSON match");
-        } else {
-            System.out.println("\n\n Base JSON and obtained JSON NOT match");
-        }
+        Assert.assertEquals("JSON not match", baseJson, currentJson);
 
     }
 
